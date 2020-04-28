@@ -11,15 +11,15 @@
 		CE7FADF8244C2DEF00FB9318 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FADF7244C2DEF00FB9318 /* SceneDelegate.swift */; };
 		CE7FADFA244C2DEF00FB9318 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FADF9244C2DEF00FB9318 /* ViewController.swift */; };
 		CE7FADFD244C2DEF00FB9318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7FADFB244C2DEF00FB9318 /* Main.storyboard */; };
-		CE7FAE00244C2DEF00FB9318 /* sw_people.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE7FADFE244C2DEF00FB9318 /* sw_people.xcdatamodeld */; };
+		CE7FAE00244C2DEF00FB9318 /* sw_expense.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE7FADFE244C2DEF00FB9318 /* sw_expense.xcdatamodeld */; };
 		CE7FAE02244C2DF000FB9318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7FAE01244C2DF000FB9318 /* Assets.xcassets */; };
 		CE7FAE05244C2DF000FB9318 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7FAE03244C2DF000FB9318 /* LaunchScreen.storyboard */; };
-		CE7FAE0E244C2E2000FB9318 /* People+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FAE0C244C2E2000FB9318 /* People+CoreDataClass.swift */; };
-		CE7FAE0F244C2E2000FB9318 /* People+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FAE0D244C2E2000FB9318 /* People+CoreDataProperties.swift */; };
+		CE7FAE0E244C2E2000FB9318 /* Expense+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FAE0C244C2E2000FB9318 /* Expense+CoreDataClass.swift */; };
+		CE7FAE0F244C2E2000FB9318 /* Expense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FAE0D244C2E2000FB9318 /* Expense+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE7FADF2244C2DEF00FB9318 /* sw-people.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sw-people.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7FADF2244C2DEF00FB9318 /* sw-expense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sw-expense.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7FADF5244C2DEF00FB9318 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE7FADF7244C2DEF00FB9318 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CE7FADF9244C2DEF00FB9318 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,8 +28,8 @@
 		CE7FAE01244C2DF000FB9318 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE7FAE04244C2DF000FB9318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE7FAE06244C2DF000FB9318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE7FAE0C244C2E2000FB9318 /* People+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "People+CoreDataClass.swift"; sourceTree = "<group>"; };
-		CE7FAE0D244C2E2000FB9318 /* People+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "People+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE7FAE0C244C2E2000FB9318 /* Expense+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CE7FAE0D244C2E2000FB9318 /* Expense+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,9 +46,9 @@
 		CE7FADE9244C2DEF00FB9318 = {
 			isa = PBXGroup;
 			children = (
-				CE7FAE0C244C2E2000FB9318 /* People+CoreDataClass.swift */,
-				CE7FAE0D244C2E2000FB9318 /* People+CoreDataProperties.swift */,
-				CE7FADF4244C2DEF00FB9318 /* sw-people */,
+				CE7FAE0C244C2E2000FB9318 /* Expense+CoreDataClass.swift */,
+				CE7FAE0D244C2E2000FB9318 /* Expense+CoreDataProperties.swift */,
+				CE7FADF4244C2DEF00FB9318 /* sw-expense */,
 				CE7FADF3244C2DEF00FB9318 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,12 +56,12 @@
 		CE7FADF3244C2DEF00FB9318 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE7FADF2244C2DEF00FB9318 /* sw-people.app */,
+				CE7FADF2244C2DEF00FB9318 /* sw-expense.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CE7FADF4244C2DEF00FB9318 /* sw-people */ = {
+		CE7FADF4244C2DEF00FB9318 /* sw-expense */ = {
 			isa = PBXGroup;
 			children = (
 				CE7FADF5244C2DEF00FB9318 /* AppDelegate.swift */,
@@ -71,17 +71,17 @@
 				CE7FAE01244C2DF000FB9318 /* Assets.xcassets */,
 				CE7FAE03244C2DF000FB9318 /* LaunchScreen.storyboard */,
 				CE7FAE06244C2DF000FB9318 /* Info.plist */,
-				CE7FADFE244C2DEF00FB9318 /* sw_people.xcdatamodeld */,
+				CE7FADFE244C2DEF00FB9318 /* sw_expense.xcdatamodeld */,
 			);
-			path = "sw-people";
+			path = "sw-expense";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CE7FADF1244C2DEF00FB9318 /* sw-people */ = {
+		CE7FADF1244C2DEF00FB9318 /* sw-expense */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE7FAE09244C2DF000FB9318 /* Build configuration list for PBXNativeTarget "sw-people" */;
+			buildConfigurationList = CE7FAE09244C2DF000FB9318 /* Build configuration list for PBXNativeTarget "sw-expense" */;
 			buildPhases = (
 				CE7FADEE244C2DEF00FB9318 /* Sources */,
 				CE7FADEF244C2DEF00FB9318 /* Frameworks */,
@@ -91,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = "sw-people";
+			name = "sw-expense";
 			productName = "sw-people";
-			productReference = CE7FADF2244C2DEF00FB9318 /* sw-people.app */;
+			productReference = CE7FADF2244C2DEF00FB9318 /* sw-expense.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CE7FADED244C2DEF00FB9318 /* Build configuration list for PBXProject "sw-people" */;
+			buildConfigurationList = CE7FADED244C2DEF00FB9318 /* Build configuration list for PBXProject "sw-expense" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -124,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE7FADF1244C2DEF00FB9318 /* sw-people */,
+				CE7FADF1244C2DEF00FB9318 /* sw-expense */,
 			);
 		};
 /* End PBXProject section */
@@ -147,11 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE7FAE00244C2DEF00FB9318 /* sw_people.xcdatamodeld in Sources */,
+				CE7FAE00244C2DEF00FB9318 /* sw_expense.xcdatamodeld in Sources */,
 				CE7FADFA244C2DEF00FB9318 /* ViewController.swift in Sources */,
-				CE7FAE0E244C2E2000FB9318 /* People+CoreDataClass.swift in Sources */,
+				CE7FAE0E244C2E2000FB9318 /* Expense+CoreDataClass.swift in Sources */,
 				CE7FADF6244C2DEF00FB9318 /* AppDelegate.swift in Sources */,
-				CE7FAE0F244C2E2000FB9318 /* People+CoreDataProperties.swift in Sources */,
+				CE7FAE0F244C2E2000FB9318 /* Expense+CoreDataProperties.swift in Sources */,
 				CE7FADF8244C2DEF00FB9318 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,7 +228,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -282,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -298,12 +298,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HBY3YADU65;
-				INFOPLIST_FILE = "sw-people/Info.plist";
+				INFOPLIST_FILE = "sw-expense/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sw-people.sw-people";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sw-expense.sw-expense";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -316,12 +317,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HBY3YADU65;
-				INFOPLIST_FILE = "sw-people/Info.plist";
+				INFOPLIST_FILE = "sw-expense/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sw-people.sw-people";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sw-expense.sw-expense";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -331,7 +333,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CE7FADED244C2DEF00FB9318 /* Build configuration list for PBXProject "sw-people" */ = {
+		CE7FADED244C2DEF00FB9318 /* Build configuration list for PBXProject "sw-expense" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE7FAE07244C2DF000FB9318 /* Debug */,
@@ -340,7 +342,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE7FAE09244C2DF000FB9318 /* Build configuration list for PBXNativeTarget "sw-people" */ = {
+		CE7FAE09244C2DF000FB9318 /* Build configuration list for PBXNativeTarget "sw-expense" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE7FAE0A244C2DF000FB9318 /* Debug */,
@@ -352,13 +354,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		CE7FADFE244C2DEF00FB9318 /* sw_people.xcdatamodeld */ = {
+		CE7FADFE244C2DEF00FB9318 /* sw_expense.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				CE7FADFF244C2DEF00FB9318 /* sw_people.xcdatamodel */,
 			);
 			currentVersion = CE7FADFF244C2DEF00FB9318 /* sw_people.xcdatamodel */;
-			path = sw_people.xcdatamodeld;
+			path = sw_expense.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

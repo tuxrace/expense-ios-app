@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  sw-people
+//  sw-expense
 //
 //  Created by User on 19/4/20.
 //  Copyright © 2020 User. All rights reserved.
