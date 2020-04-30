@@ -10,3 +10,8 @@ Core Sata
 command + r
 
 ![screen](screen.png)
+
+## Requirements
+Xcode 11
+iOS 13+
+Swift 5
