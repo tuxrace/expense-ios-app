@@ -8,3 +8,5 @@ Core Sata
 
 ## To run in xcode simulator
 command + r
+
+![screen](screen.png)
