@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelExpenses: UILabel!
     @IBOutlet weak var textAmount: UITextField!
     @IBOutlet weak var testTable: UITableView!
-    var expenses: [Int] = [];
+    var expenses: [Float] = [];
     override func viewDidLoad() {
         deleteData()
         getData()
@@ -43,13 +43,13 @@ class ViewController: UIViewController {
     
     @objc func doneButtonTapped(sender: UIBarButtonItem) {
         if (textAmount.text != ""){
-            saveAmount(Int(textAmount.text!)!)
+            saveAmount(Float(textAmount.text!)!)
         }
         textAmount.text = ""
         textAmount.resignFirstResponder()
     }
     
-    func saveAmount(_ amt: Int){
+    func saveAmount(_ amt: Float){
         // CoreData
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         let entity = NSEntityDescription.entity(forEntityName: "Expense", in: context)
@@ -81,7 +81,7 @@ class ViewController: UIViewController {
             let res = try context.fetch(request)
             if (res.count > 0){
                 for x in res as! [NSManagedObject]{
-                    expenses.insert(x.value(forKey: "amount") as! Int, at: expenses.endIndex)
+                    expenses.insert(x.value(forKey: "amount") as! Float, at: expenses.endIndex)
                 }
             }
         } catch  {
