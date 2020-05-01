@@ -16,6 +16,7 @@
 		CE7FAE05244C2DF000FB9318 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7FAE03244C2DF000FB9318 /* LaunchScreen.storyboard */; };
 		CE7FAE0E244C2E2000FB9318 /* Expense+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FAE0C244C2E2000FB9318 /* Expense+CoreDataClass.swift */; };
 		CE7FAE0F244C2E2000FB9318 /* Expense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FAE0D244C2E2000FB9318 /* Expense+CoreDataProperties.swift */; };
+		CEC18397245C56AD00D9324E /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC18396245C56AD00D9324E /* Expense.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CE7FAE06244C2DF000FB9318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE7FAE0C244C2E2000FB9318 /* Expense+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataClass.swift"; sourceTree = "<group>"; };
 		CE7FAE0D244C2E2000FB9318 /* Expense+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CEC18396245C56AD00D9324E /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				CE7FAE03244C2DF000FB9318 /* LaunchScreen.storyboard */,
 				CE7FAE06244C2DF000FB9318 /* Info.plist */,
 				CE7FADFE244C2DEF00FB9318 /* sw_expense.xcdatamodeld */,
+				CEC18396245C56AD00D9324E /* Expense.swift */,
 			);
 			path = "sw-expense";
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC18397245C56AD00D9324E /* Expense.swift in Sources */,
 				CE7FAE00244C2DEF00FB9318 /* sw_expense.xcdatamodeld in Sources */,
 				CE7FADFA244C2DEF00FB9318 /* ViewController.swift in Sources */,
 				CE7FAE0E244C2E2000FB9318 /* Expense+CoreDataClass.swift in Sources */,

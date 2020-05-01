@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelExpenses: UILabel!
     @IBOutlet weak var textAmount: UITextField!
     @IBOutlet weak var testTable: UITableView!
-    var expenses: [Float] = [];
+    var expenses: [Expenses] = [];
     override func viewDidLoad() {
         deleteData()
         getData()
@@ -50,25 +50,34 @@ class ViewController: UIViewController {
     }
     
     func saveAmount(_ amt: Float){
-        // CoreData
+        // Save to CoreData
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         let entity = NSEntityDescription.entity(forEntityName: "Expense", in: context)
         let expenseData = NSManagedObject(entity: entity!, insertInto: context)
+        let todayDate = Date()
+        let formatter = DateFormatter();
+        formatter.dateStyle = .long
+        let today = formatter.string(from: todayDate)
+        
         expenseData.setValue(amt, forKey: "amount")
+        expenseData.setValue(today, forKey: "date")
+        
         do {
             try context.save()
-            expenses.insert(amt, at: expenses.endIndex)
+            let today = Date()
+            let expensesInfo = Expenses(amount: amt, date: today)
+            expenses.insert(expensesInfo, at: expenses.endIndex)
         } catch  {
             print("fail")
         }
         
-        // Table
+        // Update Table
         let indexPath = IndexPath(row: expenses.count - 1, section: 0)
         testTable.beginUpdates()
         testTable.insertRows(at: [indexPath], with: .automatic)
         testTable.endUpdates()
         
-        // Label
+        // Update Label
         updatedExpense()
     }
     
@@ -81,7 +90,8 @@ class ViewController: UIViewController {
             let res = try context.fetch(request)
             if (res.count > 0){
                 for x in res as! [NSManagedObject]{
-                    expenses.insert(x.value(forKey: "amount") as! Float, at: expenses.endIndex)
+                    let expensesInfo = Expenses(amount: x.value(forKey: "amount") as! Float, date: x.value(forKey: "date") as! Date)
+                    expenses.insert(expensesInfo, at: expenses.endIndex)
                 }
             }
         } catch  {
@@ -90,13 +100,14 @@ class ViewController: UIViewController {
     }
     
     func updatedExpense(){
-        let expensesTotal = expenses.reduce(0, +)
+        let amountExpenses: [Float] = expenses.map({ return $0.amount })
+        let expensesTotal = amountExpenses.reduce(0, +)
         if (expensesTotal > 250 && expensesTotal < 400){
             labelExpenses.backgroundColor = UIColor.orange
         } else if(expensesTotal > 400){
             labelExpenses.backgroundColor = UIColor.red
         }
-        labelExpenses.text = String(expenses.reduce(0, +))
+        labelExpenses.text = String(expensesTotal)
     }
     
     func deleteData(){
@@ -119,7 +130,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel!.text = String(expenses[indexPath.row])
+        cell.textLabel!.text = String(expenses[indexPath.row].amount)
         return cell
     }
     
