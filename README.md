@@ -1,4 +1,4 @@
-# sw-expense
+# Expense IOS app
 Iphone IOS expense summary app written in swift using uitableview and core data
 
 ## Technologies used
