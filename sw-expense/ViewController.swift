@@ -56,12 +56,8 @@ class ViewController: UIViewController {
         let entity = NSEntityDescription.entity(forEntityName: "Expense", in: context)
         let expenseData = NSManagedObject(entity: entity!, insertInto: context)
         let todayDate = Date()
-        let formatter = DateFormatter();
-        formatter.dateStyle = .long
-        let today = formatter.string(from: todayDate)
-        
         expenseData.setValue(amt, forKey: "amount")
-        expenseData.setValue(today, forKey: "date")
+        expenseData.setValue(todayDate, forKey: "date")
         
         do {
             try context.save()
@@ -131,7 +127,15 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel!.text = String(expenses[indexPath.row].amount)
+        
+        let date = expenses[indexPath.row].date
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMMM-dd"
+        let dateString = dateFormatter.string(from: date)
+        
+        cell.textLabel?.text = String(expenses[indexPath.row].amount)
+        cell.detailTextLabel?.text = dateString
+        
         return cell
     }
     
