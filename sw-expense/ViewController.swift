@@ -23,7 +23,8 @@ class ViewController: UIViewController {
         self.addDoneButtonOnKeyboard()
         testTable.dataSource = self
         testTable.delegate = self
-        
+        self.navigationItem.title = "Expenses"
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     func addDoneButtonOnKeyboard()
