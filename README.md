@@ -4,7 +4,7 @@ Iphone IOS expense summary app written in swift using uitableview and core data
 ## Technologies used
 Swift
 Uitableview
-Core Sata
+Core Data
 
 ## To run in xcode simulator
 command + r
