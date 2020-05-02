@@ -130,10 +130,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         
         let date = expenses[indexPath.row].date
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMMM-dd"
+        dateFormatter.dateFormat = "MMMM-dd-yyyy"
         let dateString = dateFormatter.string(from: date)
         
         cell.textLabel?.text = String(expenses[indexPath.row].amount)
+        cell.detailTextLabel?.textColor = .lightGray
         cell.detailTextLabel?.text = dateString
         
         return cell
