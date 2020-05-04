@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         deleteData()
         getData()
+        self.view.backgroundColor = .red
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.addDoneButtonOnKeyboard()
@@ -25,6 +26,14 @@ class ViewController: UIViewController {
         testTable.delegate = self
         self.navigationItem.title = "Expenses"
         navigationController?.navigationBar.prefersLargeTitles = true
+        let appearance = UINavigationBarAppearance()
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.red]
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.red]
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        navigationController?.navigationBar.barStyle = .black
     }
     
     func addDoneButtonOnKeyboard()
@@ -143,5 +152,17 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
+    
+//    func deleteAction(indexPath) -> UIContextualAction {
+//        let selected = expenses[indexPath];
+//        let action = UIContextualAction(style: .normal, title: 'delete', handler: {
+//
+//        })
+//    }
+    
+//    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+//        let delete = deleteAction(indexPath)
+//        return UISwipeActionsConfiguration(actions: [delete])
+//    }
     
 }
