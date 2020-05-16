@@ -26,10 +26,6 @@ class ViewController: UIViewController {
         testTable.delegate = self
         self.navigationItem.title = "Expenses"
         navigationController?.navigationBar.prefersLargeTitles = true
-        let appearance = UINavigationBarAppearance()
-        appearance.titleTextAttributes = [.foregroundColor: UIColor.red]
-        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.red]
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -16,15 +16,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbV-ht-GuK">
-                                <rect key="frame" x="24" y="68" width="366" height="33.666666666666657"/>
-                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                <rect key="frame" x="24" y="68" width="366" height="57.333333333333343"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="48"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YBD-LJ-qSO">
-                                <rect key="frame" x="0.0" y="193" width="414" height="543"/>
+                                <rect key="frame" x="0.0" y="216.66666666666669" width="414" height="519.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="lDH-0T-nMX" detailTextLabel="5Fj-3A-1A8" style="IBUITableViewCellStyleSubtitle" id="1oo-n0-w2K">
@@ -54,22 +53,27 @@
                                 </prototypes>
                             </tableView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="btE-ye-iL8">
-                                <rect key="frame" x="24" y="125.66666666666667" width="366" height="43.333333333333329"/>
+                                <rect key="frame" x="24" y="149.33333333333334" width="366" height="43.333333333333343"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="go"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="btE-ye-iL8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="DqJ-lW-908"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="btE-ye-iL8" secondAttribute="trailing" constant="24" id="FZg-GL-JsL"/>
+                            <constraint firstAttribute="bottom" secondItem="YBD-LJ-qSO" secondAttribute="bottom" id="GRd-xG-Qy1"/>
+                            <constraint firstItem="YBD-LJ-qSO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mhf-gQ-eNF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XbV-ht-GuK" secondAttribute="trailing" constant="24" id="NcA-0N-Nag"/>
-                            <constraint firstItem="YBD-LJ-qSO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="X59-dz-Y7y"/>
-                            <constraint firstItem="YBD-LJ-qSO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Yn1-zG-JuJ"/>
+                            <constraint firstItem="YBD-LJ-qSO" firstAttribute="top" secondItem="btE-ye-iL8" secondAttribute="bottom" constant="24" id="gQR-0f-H83"/>
+                            <constraint firstItem="YBD-LJ-qSO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iN0-n6-tPh"/>
                             <constraint firstItem="btE-ye-iL8" firstAttribute="top" secondItem="XbV-ht-GuK" secondAttribute="bottom" constant="24" id="mqR-29-OtL"/>
                             <constraint firstItem="XbV-ht-GuK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="o0L-9p-rBK"/>
-                            <constraint firstItem="YBD-LJ-qSO" firstAttribute="top" secondItem="btE-ye-iL8" secondAttribute="bottom" constant="24" id="ofx-dS-gH9"/>
-                            <constraint firstItem="YBD-LJ-qSO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="pT4-1h-ios"/>
                             <constraint firstItem="XbV-ht-GuK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="uOA-9b-naa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
