@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         deleteData()
         getData()
-        self.view.backgroundColor = .red
+        self.view.backgroundColor = .orange
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.addDoneButtonOnKeyboard()
